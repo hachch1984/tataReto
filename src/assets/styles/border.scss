@@ -1,0 +1,28 @@
+@import 'variables.scss';
+
+.border-color-gray{
+    border-color: $var-color-gray  ;
+    border-style: solid;  
+}
+
+.border-left-width-1px{
+    border-left-width: 1px;
+}
+
+.border-width-1px{
+    border-width: 1px;    
+}
+
+.border-radius-5px
+{
+    border-radius: 5px;
+}
+
+.border-color-blue{
+    border: solid 1px $var-color-blue ;
+    border-style: solid;  
+}
+
+.border-color-inherit{
+    border: solid 1px inherit;
+}

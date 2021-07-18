@@ -1,0 +1,256 @@
+@import "variables.scss", "reset-html.scss", "background-color.scss",
+  "color.scss", "border.scss";
+
+.inputControl_inactive {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 16px;
+    color: $var-color-gray;
+    font-weight: bolder;
+    transition: all 1s;
+  }
+  option {
+    color: $var-color-gray;
+  }
+  input {
+    display: none;
+  }
+}
+
+.inputControl_active {
+  border-radius: 5px;
+  height: 50px;
+  p {
+    font-size: 10px;
+    padding-left: 0px;
+    color: $var-color-gray;
+    font-weight: bolder;
+  }
+  option {
+    color: $var-color-gray;
+  }
+  input {
+    font-size: 16;
+    display: block;
+  }
+}
+
+.text-one {
+  color: #ffffff;
+  font-size: 40px;
+  h1 {
+    font-weight: lighter;
+  }
+  h2 {
+    font-weight: 500;
+  }
+}
+
+.text-two {
+  color: #ffffff;
+  font-size: 15px;
+  color: $var-color-gray;
+}
+
+.lista {
+  li {
+    display: flex;
+    align-items: center;
+
+    padding-top: 20px;
+    img {
+      width: 23px;
+      height: 23px;
+    }
+
+    p {
+      font-size: 15px;
+      padding-left: 5px;
+      color: $var-color-gray;
+    }
+  }
+}
+
+.titulo-superior {
+  margin-bottom: 50px;
+  :nth-child(1) {
+    font-size: 30px;
+    color: $var-color-gray;
+    font-weight: bolder;
+  }
+
+  :nth-child(2) {
+    font-size: 30px;
+    color: $var-color-blue;
+    font-weight: bolder;
+  }
+  :nth-child(3) {
+    color: $var-color-gray;
+    margin-top: 10px;
+   
+  }
+    
+}
+
+.button-one {
+  background-color: $var-color-blue;
+  height: 50px;
+  width: 250px;
+  color: white;
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+
+  border: none;
+  display: block;
+  border-radius: 10px;
+}
+
+.checkbox-aceptoLa {
+  color: $var-color-gray;
+  font-size: 14px;
+  span {
+    text-decoration: underline;
+  }
+}
+
+.radioButton-one {
+  color: $var-color-gray;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.label-one {
+  color: $var-color-gray;
+  font-size: 17px;
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.box {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: solid 1px $var-color-gray;
+  padding-left: 10px;
+  &:hover {
+    border: solid 1px green;
+  }
+  div {
+    text-align: right;
+    padding-right: 2px;
+    padding-top: 2px;
+    img {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: solid 1px $var-color-gray;
+      align-self: flex-end;
+    }
+  }
+  p {
+    font-size: 25px;
+    margin: 8px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+  span {
+    font-size: 12px;
+  }
+}
+
+.box-green {
+  border-color: green;
+}
+
+.space {
+  width: 10px;
+}
+
+.description {
+  height: 500px;
+  margin-top: 40px;
+  border: solid 1px $var-color-gray;
+  border-radius: 10px;
+}
+.description-titulo {
+  background-color: #f0f2fa;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: gray;
+  font-weight: bolder;
+}
+
+.description-imagenDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.description-imagenDescription-separador-vertical {
+  background-color: $var-color-gray;
+  width: 1px;
+  height: 100px;
+}
+
+.description-imagenDescription-descripcion {
+  width: 200px;
+  font-size: 25px;
+  margin: 8px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-bottom: 20px;
+
+  :nth-child(1) {
+    font-size: 13px;
+  }
+  :nth-child(2) {
+    margin: 20px 0px 20px 0px;
+    font-size: 25px;
+  }
+  :nth-child(3) {
+    font-size: 13px;
+    background-color: green;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+  }
+}
+.description-imagenDescription-imagen {
+  width: 100px;
+  height: 100px;
+}
+.description-detalleCobertura {
+  border-top: solid 1px $var-color-gray;
+  width: 80%;
+  margin: auto;
+
+  li {
+    margin-top: 15px;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.texto-tachado {
+  text-decoration: line-through;
+}
